@@ -1,0 +1,97 @@
+.add {
+  width: 20%;
+  border: none;
+  margin-top: 50px;
+  padding: 20px;
+  margin-left: 30px;
+  font-size: 25px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.container div {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(202, 198, 198);
+  border-radius: 7px;
+  text-align: center;
+  color: black;
+}
+
+.container img {
+  width:auto;
+  height:15rem;
+  padding:1rem;
+}
+.link {
+  text-decoration: none;
+}
+
+.card {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card button{
+    width: 28%;
+  border: none;
+  margin-top: 50px;
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(163, 159, 159);
+}
+.card img{
+  width:auto;
+  height:15rem;
+  padding:1rem;
+}
+.detail{
+  width:70%;
+  margin:auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.detail input{
+  display :block;
+  width:30%;
+  
+  margin:auto;
+  padding:15px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  border:none;
+  font-size:17px;
+}
+
+.detail button{
+  display :block;
+  width:10%;
+  padding:10px;
+  margin:auto;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  border:none;
+  font-size:20px;
+  background-color: rgb(216, 181, 136);
+  font-weight: bold;
+  cursor: pointer;
+
+}
