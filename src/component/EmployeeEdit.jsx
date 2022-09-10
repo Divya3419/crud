@@ -10,13 +10,11 @@ const EmployeeEdit = () => {
   const [age, setAge] = useState("");
   const [pic, setPic] = useState("");
 
-  const {id}=useParams()
-  console.log(id)
+  const { id } = useParams();
+  console.log(id);
   const navigate = useNavigate();
 
-  
-
-    const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     let payload = {
       name,
@@ -24,11 +22,11 @@ const EmployeeEdit = () => {
       age,
       pic,
     };
-    axios.put(`https://blueproduct.herokuapp.com/employee/${id}`,payload)
-    .then((r)=>{
-        navigate('/')
-    })
-
+    axios
+      .put(`https://blueproduct.herokuapp.com/employee/${id}`, payload)
+      .then((r) => {
+        navigate("/");
+      });
   };
 
   return (
@@ -59,7 +57,9 @@ const EmployeeEdit = () => {
           onChange={(e) => setPic(e.target.value)}
           placeholder="Employee Image"
         />
-        <button style={{width:'20%'}} type="submit">Save Changes</button>
+        <button style={{ width: "20%" }} type="submit">
+          Save Changes
+        </button>
       </form>
     </div>
   );

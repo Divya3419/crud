@@ -7,7 +7,7 @@ const Employee = () => {
 
   useEffect(() => {
     axios
-      .get('https://blueproduct.herokuapp.com/employee')
+      .get("https://blueproduct.herokuapp.com/employee")
       .then((r) => setData(r.data))
       .catch((e) => console.log(e));
   }, []);
